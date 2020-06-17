@@ -95,11 +95,11 @@
                 <div class="coint2 bg-light p-4">
                     <h5 class="display-5 mt-0">Oczekujące na obsługę</h5>
                     <hr class="my-2">
-                    <div class="badge badge-info p-2">45</div><span class="m-2">Zamówienia<span>
+                    <div class="badge badge-info p-2">45</div><span class="m-2">Zamówienia</span>
                     <hr class="my-2">
-                    <div class="badge badge-success p-2">45</div><span class="m-2">Opłacone<span>
+                    <div class="badge badge-success p-2">45</div><span class="m-2">Opłacone</span>
                     <hr class="my-2">
-                    <div class="badge badge-warning p-2">45</div><span class="m-2">Oczekujące na płatność<span>
+                    <div class="badge badge-warning p-2">45</div><span class="m-2">Oczekujące na płatność</span>
                 
                  </div>
 
