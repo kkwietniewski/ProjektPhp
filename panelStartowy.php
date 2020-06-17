@@ -9,7 +9,8 @@
 </head>
 <body>
                 <nav class="navbar-expand-xl navbar-light bg-light" >
-                    <div class="collapse navbar-collapse" style="justify-content:space-between" >
+                    <div class="collapse navbar-collapse " >
+                    <div class="menu">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link">Panel startowy</a>
@@ -23,6 +24,7 @@
                         <li class="nav-item">
                             <a class="nav-link">Zamówienia</a>
                         </li>
+                        </div>
                         </div> 
                     </ul>
                 </nav>
@@ -31,12 +33,12 @@
   
 
 
-<div class="container-fluid mt-5">
+<div class="container-fluid mt-5 mb-5">
         <div class="row">
 
             <div class="col-8">
                 
-                <table class="table table-striped table-dark border border-primary">
+                <table class="table table-striped table-light ">
                     <thead>
                         <tr>
                             <th scope="col">Data</th>
@@ -48,32 +50,39 @@
                         </thead>
                         <tbody>
                         <tr> 
-                            <td scope="row">02-01-2012</th>
-                            <td scope="row">zamówienie nr 124243</th>
-                            <td scope="row">Jan Nowak</th>
-                            <td scope="row">213,54 zł</th>
-                            <td scope="row">opłacone</th>
+                            <td scope="row">02-01-2012</td>
+                            <td scope="row">zamówienie nr 124243</td>
+                            <td scope="row">Jan Nowak</td>
+                            <td scope="row">213,54 zł</td>
+                            <td scope="row">opłacone</td>
                         </tr>
                      <tr> 
-                            <td scope="row">02-01-2012</th>
-                            <td scope="row">zamówienie nr 124243</th>
-                            <td scope="row">Jan Nowak</th>
-                            <td scope="row">213,54 zł</th>
-                            <td scope="row">opłacone</th>
+                            <td scope="row">02-01-2012</td>
+                            <td scope="row">zamówienie nr 124243</td>
+                            <td scope="row">Jan Nowak</td>
+                            <td scope="row">213,54 zł</td>
+                            <td scope="row">opłacone</td>
                         </tr>
                      <tr> 
-                            <td scope="row">02-01-2012</th>
-                            <td scope="row">zamówienie nr 124243</th>
-                            <td scope="row">Jan Nowak</th>
-                            <td scope="row">213,54 zł</th>
-                            <td scope="row">opłacone</th>
+                            <td scope="row">02-01-2012</td>
+                            <td scope="row">zamówienie nr 124243</td>
+                            <td scope="row">Jan Nowak</td>
+                            <td scope="row">213,54 zł</td>
+                            <td scope="row">opłacone</td>
                         </tr>
                      <tr> 
-                            <td scope="row">02-01-2012</th>
-                            <td scope="row">zamówienie nr 124243</th>
-                            <td scope="row">Jan Nowak</th>
-                            <td scope="row">213,54 zł</th>
-                            <td scope="row">opłacone</th>
+                            <td scope="row">02-01-2012</td>
+                            <td scope="row">zamówienie nr 124243</td>
+                            <td scope="row">Jan Nowak</td>
+                            <td scope="row">213,54 zł</td>
+                            <td scope="row">opłacone</td>
+                        </tr>
+                    <tr> 
+                            <td scope="row">02-01-2012</td>
+                            <td scope="row">zamówienie nr 124243</td>
+                            <td scope="row">Jan Nowak</td>
+                            <td scope="row">213,54 zł</td>
+                            <td scope="row">opłacone</td>
                         </tr>
                     
                     </tbody>
@@ -83,7 +92,7 @@
 
             <div class="col-4 ">
 
-                <div class="jumbotron">
+                <div class="coint2 bg-light p-4">
                     <h5 class="display-5 mt-0">Oczekujące na obsługę</h5>
                     <hr class="my-2">
                     <div class="badge badge-info p-2">45</div><span class="m-2">Zamówienia<span>
@@ -96,6 +105,89 @@
 
             </div>
             
+
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <div class="bg-light d-flex p-4 mt-4" style="justify-content:space-between">
+                    
+                <!--  -->
+                <div class="card" style="width: 30%;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+<!--  -->
+<div class="card" style="width: 30%;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<!--  -->
+<div class="card" style="width: 30%;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<!--  -->
+                </div>
+            </div>
+
+        <div class="col-4">
+            <div class="bg-light">
+                <h5 class="display-5 mt-4">Kończące się produkty</h5>
+                <table class="table table-striped table-light ">
+                    <thead>
+                        <tr>
+                            <th scope="col">Data</th>
+                           <th scope="col">Szczegóły zamówienia</th>
+                           <th scope="col">Klient</th>
+                           <th scope="col">Klient</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr> 
+                            <td scope="row">02-01-2012</td>
+                            <td scope="row">zamówienie nr 124243</td>
+                            <td scope="row">Jan Nowak</td>
+                            <td scope="row">Jan Nowak</td>
+                            
+                        </tr>
+                     <tr> 
+                            <td scope="row">02-01-2012</td>
+                            <td scope="row">zamówienie nr 124243</td>
+                            <td scope="row">Jan Nowak</td>
+                            <td scope="row">Jan Nowak</td>
+                            
+                        </tr>
+                     <tr> 
+                            <td scope="row">02-01-2012</td>
+                            <td scope="row">zamówienie nr 124243</td>
+                            <td scope="row">Jan Nowak</td>
+                            <td scope="row">Jan Nowak</td>
+                            
+                        </tr>
+                    
+                    
+                    </tbody>
+                </table>
+                
+            </div>
+
+        </div>
 
         </div>
 
