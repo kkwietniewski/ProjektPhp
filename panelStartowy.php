@@ -8,9 +8,9 @@
     <title>Aplikacja do zarządzania sklepem internetowym</title>
 </head>
 <body>
-                <nav class="navbar-expand-xl navbar-light bg-light p-2">
-                    <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav mr-2">
+                <nav class="navbar-expand-xl navbar-light bg-light" >
+                    <div class="collapse navbar-collapse" style="justify-content:space-between" >
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link">Panel startowy</a>
                         </li>
@@ -83,11 +83,16 @@
 
             <div class="col-4 ">
 
-            <div class="jumbotron">
-                <h5 class="display-5">Oczekujące na obsługę</h5>
-                <hr class="my-4">
- 
-            </div>
+                <div class="jumbotron">
+                    <h5 class="display-5 mt-0">Oczekujące na obsługę</h5>
+                    <hr class="my-2">
+                    <div class="badge badge-info p-2">45</div><span class="m-2">Zamówienia<span>
+                    <hr class="my-2">
+                    <div class="badge badge-success p-2">45</div><span class="m-2">Opłacone<span>
+                    <hr class="my-2">
+                    <div class="badge badge-warning p-2">45</div><span class="m-2">Oczekujące na płatność<span>
+                
+                 </div>
 
             </div>
             
