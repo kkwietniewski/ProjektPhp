@@ -27,6 +27,15 @@
         echo $row['data_utworzenia'].'<br>';
 
     }
+    $sql2 = "SELECT k.nazwa, k.email, z.data, z.typ_platnosci FROM zamowienia z JOIN klienci k ON k.id = z.klient_id WHERE z.klient_id = 2";
+
+    $result = mysqli_query($conn, $sql2);
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo $row['nazwa'];
+        echo $row['email'];
+        echo $row['data'];
+        echo $row['typ_platnosci'];
+    }
 
 ?>
                 <nav class="navbar-expand-xl navbar-light bg-light p-2">
