@@ -8,7 +8,7 @@
     <title>Aplikacja do zarządzania sklepem internetowym</title>
 </head>
 <body>
-                <nav class="navbar-expand-xl navbar-light bg-light" >
+                <nav class="navbar-expand-xl navbar-dark bg-dark p-2" >
                     <div class="collapse navbar-collapse " >
                     <div class="menu">
                     <ul class="navbar-nav">

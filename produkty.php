@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<nav class="navbar-expand-xl navbar-light bg-light" >
+<nav class="navbar-expand-xl navbar-dark bg-dark p-2" >
                     <div class="collapse navbar-collapse " >
                     <div class="menu">
                     <ul class="navbar-nav">
@@ -28,7 +28,24 @@
                         </div>
                         </div> 
                     </ul>
-                </nav>
+</nav>
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-6">
+
+            <div class="bg-light mt-4 p-2">
+                <span class="badge badge-success mr-2">+</span>Dodaj produkt
+            </div>
+
+            <div class="col-6">
+            </div>
+        </div>
+    </div>
+                
+
+</div>
 
 
     

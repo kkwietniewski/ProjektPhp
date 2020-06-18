@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<nav class="navbar-expand-xl navbar-light bg-light" >
+<nav class="navbar-expand-xl navbar-dark bg-dark p-2" >
                     <div class="collapse navbar-collapse " >
                     <div class="menu">
                     <ul class="navbar-nav">
@@ -17,7 +17,7 @@
                             <a class="nav-link" href="./panelStartowy.php">Panel startowy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./asortyment.php">Asortyment</a>
+                            <a class="nav-link" href="./produkty.php">Asortyment</a>
                         </li> 
                         <li class="nav-item">
                             <a class="nav-link active">Dodaj produkty</a>
