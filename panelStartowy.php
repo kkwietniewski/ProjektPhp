@@ -38,68 +38,26 @@
 
             <div class="col-8">
                 
-                <table class="table table-striped table-light ">
-                    <thead>
-                        <tr>
-                            <th scope="col">Data</th>
-                           <th scope="col">Szczegóły zamówienia</th>
-                           <th scope="col">Klient</th>
-                            <th scope="col">Wartość</th>
-                            <th scope="col">Status</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr> 
-                            <td scope="row">02-01-2012</td>
-                            <td scope="row">zamówienie nr 124243</td>
-                            <td scope="row">Jan Nowak</td>
-                            <td scope="row">213,54 zł</td>
-                            <td scope="row">opłacone</td>
-                        </tr>
-                     <tr> 
-                            <td scope="row">02-01-2012</td>
-                            <td scope="row">zamówienie nr 124243</td>
-                            <td scope="row">Jan Nowak</td>
-                            <td scope="row">213,54 zł</td>
-                            <td scope="row">opłacone</td>
-                        </tr>
-                     <tr> 
-                            <td scope="row">02-01-2012</td>
-                            <td scope="row">zamówienie nr 124243</td>
-                            <td scope="row">Jan Nowak</td>
-                            <td scope="row">213,54 zł</td>
-                            <td scope="row">opłacone</td>
-                        </tr>
-                     <tr> 
-                            <td scope="row">02-01-2012</td>
-                            <td scope="row">zamówienie nr 124243</td>
-                            <td scope="row">Jan Nowak</td>
-                            <td scope="row">213,54 zł</td>
-                            <td scope="row">opłacone</td>
-                        </tr>
-                    <tr> 
-                            <td scope="row">02-01-2012</td>
-                            <td scope="row">zamówienie nr 124243</td>
-                            <td scope="row">Jan Nowak</td>
-                            <td scope="row">213,54 zł</td>
-                            <td scope="row">opłacone</td>
-                        </tr>
-                    
-                    </tbody>
-                </table>
+                <?php
+                require_once './scripts/getTable.php';
+                ?>
 
             </div>
 
             <div class="col-4 ">
 
-                <div class="coint2 bg-light p-4">
+                <div class="coint2 bg-light p-5">
+                <div class="p-2">
                     <h5 class="display-5 mt-0">Oczekujące na obsługę</h5>
+                    </div>
                     <hr class="my-2">
                     <div class="badge badge-info p-2">45</div><span class="m-2">Zamówienia</span>
                     <hr class="my-2">
                     <div class="badge badge-success p-2">45</div><span class="m-2">Opłacone</span>
                     <hr class="my-2">
+                    <div class="pb-3">
                     <div class="badge badge-warning p-2">45</div><span class="m-2">Oczekujące na płatność</span>
+                    </div>
                 
                  </div>
 
