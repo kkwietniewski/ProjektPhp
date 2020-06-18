@@ -17,7 +17,6 @@
         }
 
 
-        /* Style the navigation menu */
     .topnav {
     overflow: hidden;
     background-color: #f0f0f1; 
