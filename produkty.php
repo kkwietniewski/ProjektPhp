@@ -17,6 +17,7 @@
         }
 
 
+        /* Style the navigation menu */
     .topnav {
     overflow: hidden;
     background-color: #f0f0f1; 
@@ -25,6 +26,7 @@
 
 .topnav #filter {
   display: none;
+  
 }
 
 .topnav a {
@@ -72,8 +74,7 @@
             <div class="d-flex my-4" style="justify-content:space-between; align-items:center">
 
                 <div class="newProd">
-                    <a href="./dodajProdukt.php">
-                        <span class="badge badge-success p-2 mr-2" style="font-size:17px;">+ Dodaj produkt</span>
+                    <a class="btn btn-success p-2" style="color:#ffffff;">+ Dodaj produkt
                     </a>
                 </div>
 
@@ -90,32 +91,53 @@
     <div class="row">
         <div class="col-12 mt-3 mb-4">
         
-        <div class="topnav">
-        <a href="javascript:void(0);" onclick="myFunction()">Filtry</a>
+            <div class="topnav">
+                <a href="javascript:void(0);" onclick="myFunction()">Filtry</a>
         
-  <div id="filter">
+                <div class="m-2" id="filter">
+                    <!-- na sztywno SORTOWANIE-->
+                    <select class="mr-2">
+                        <option value="0">Data rosnąco</option>
+                        <option value="1">Data malejąco</option>
+                        <option value="2">Cena rosnąco</option>
+                        <option value="3">Cena malejąco</option>
+                        <option value="4">Nazwa a-z</option>
+                        <option value="5">Nazwa z-a</option>
+                    </select>
+                    <!-- kategorie z bazy danych -->
+                <select class="mr-2">
+                        <option value="0">Gitara klasyczna</option>
+                        <option value="1">Gitara elektryczna</option>
+                </select>
+                <!-- na sztywno STAN -->
+                <select class="mr-2">
+                        <option value="0">Dostępny</option>
+                        <option value="1">Na wyczerpaniu</option>
+                        <option value="2">Niedostępny</option>
+                </select>
 
-    <div class="custom-select" style="width:200px;">
-        <select>
-        <option value="0">Data rosnąco</option>
-        <option value="1">Data malejąco</option>
-        <option value="2">Cena rosnąco</option>
-        <option value="3">Cena malejąco</option>
-        <option value="4">Nazwa a-z</option>
-        <option value="5">Nazwa z-a</option>
-        </select>
-    </div>
-  </div>
+                <!-- Checkboxy z kategoriami -->
+                <input type="checkbox" id="bestseller" value="bestseller">
+                <label for="bestseller" class="mr-2">Bestseller</label>
+                <input type="checkbox" id="nowosc" value="Nowość">
+                <label for="nowosc" class="mr-2">Nowość</label>
+                <input type="checkbox" id="promocja" value="promocja">
+                <label for="promocja" class="mr-2">Promocja</label>
+
+
+
+                </div>
+            </div>
   
-</div>
+        </div>
 
     </div>
-    </div>
+    <!-- </div> -->
 
     <div class="row">
         <div class="col-12">
             <h4>Produkty</h4>
-        </div>
+    </div>
     </div>
     <div class="row">
         <div class="col-12">
@@ -131,19 +153,24 @@
                             <th scope="col">Waga</th>
                             <th scope="col">Kategoria</th>
                             <th scope="col">Producent</th>
+                            <th scope="col"></th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr> 
                             <td scope="row">1</td>
                             <td scope="col"><img class="img-fluid" style="width:40px; height:40px;" src="a.jpg"></td>
-                            <td scope="row"><a href="produkt.php">GIT1</a></td>
+                            <td scope="row">GIT1</td>
                             <td scope="row">Gitara akustyczna</td>
                             <td scope="row">2000</td>
                             <td scope="row">5</td>
                             <td scope="row">15kg</td>
                             <td scope="row">Gitary akustyczne</td>
                             <td scope="row">Fender</td>
+                            <td scope="row" class="btn-group">
+                                <a class="btn btn-outline-info btn-sm" href="./produkt.php">Edytuj</a>
+                                <a class="btn btn-outline-danger btn-sm" href="./produkt.php">Usuń</a>
+                            </td>
 
                         </tr>
                         </tbody>
