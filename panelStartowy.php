@@ -57,80 +57,21 @@
 
         <div class="row">
             <div class="col-8">
-                <div class="bg-light d-flex p-4 mt-4" style="justify-content:space-between">
-                    
-                <!--  -->
-                <div class="card" style="width: 30%;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
 
+                <?php
+                    require_once './scripts/popularImg.php';
+                ?>
 
-<!--  -->
-<div class="card" style="width: 30%;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-<!--  -->
-<div class="card" style="width: 30%;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<!--  -->
-                </div>
             </div>
+      
 
         <div class="col-4">
-            <div class="bg-light">
-                <h5 class="display-5 mt-4">Kończące się produkty</h5>
-                <table class="table table-striped table-light ">
-                    <thead>
-                        <tr>
-                            <th scope="col">Data</th>
-                           <th scope="col">Szczegóły zamówienia</th>
-                           <th scope="col">Klient</th>
-                           <th scope="col">Klient</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr> 
-                            <td scope="row">02-01-2012</td>
-                            <td scope="row">zamówienie nr 124243</td>
-                            <td scope="row">Jan Nowak</td>
-                            <td scope="row">Jan Nowak</td>
-                            
-                        </tr>
-                     <tr> 
-                            <td scope="row">02-01-2012</td>
-                            <td scope="row">zamówienie nr 124243</td>
-                            <td scope="row">Jan Nowak</td>
-                            <td scope="row">Jan Nowak</td>
-                            
-                        </tr>
-                     <tr> 
-                            <td scope="row">02-01-2012</td>
-                            <td scope="row">zamówienie nr 124243</td>
-                            <td scope="row">Jan Nowak</td>
-                            <td scope="row">Jan Nowak</td>
-                            
-                        </tr>
-                    
-                    
-                    </tbody>
-                </table>
+            <div class="my-5">
+                <h5 class="display-5 mb-3">Kończące się produkty</h5>
+                
+                <?php
+                    require_once './scripts/getProductTable.php';
+                ?>
                 
             </div>
 

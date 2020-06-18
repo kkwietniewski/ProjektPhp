@@ -15,7 +15,7 @@
     
 
     echo <<<SERVICE
-    <div class="coint2 bg-light p-5">
+    <div class="bg-light p-5">
                 <div class="p-2">
                     <h5 class="display-5 mt-0">Oczekujące na obsługę</h5>
                     </div>
