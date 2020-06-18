@@ -13,16 +13,16 @@
                     <div class="menu">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link">Panel startowy</a>
+                            <a class="nav-link active">Panel startowy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Asortyment</a>
+                            <a class="nav-link" href="./produkty.php">Asortyment</a>
                         </li> 
                         <li class="nav-item">
-                            <a class="nav-link">Dodaj produkty</a>
+                            <a class="nav-link" href="./dodajProdukt.php">Dodaj produkty</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Zamówienia</a>
+                            <a class="nav-link" href="./zamowienia.php">Zamówienia</a>
                         </li>
                         </div>
                         </div> 
