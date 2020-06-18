@@ -46,20 +46,9 @@
 
             <div class="col-4 ">
 
-                <div class="coint2 bg-light p-5">
-                <div class="p-2">
-                    <h5 class="display-5 mt-0">Oczekujące na obsługę</h5>
-                    </div>
-                    <hr class="my-2">
-                    <div class="badge badge-info p-2">45</div><span class="m-2">Zamówienia</span>
-                    <hr class="my-2">
-                    <div class="badge badge-success p-2">45</div><span class="m-2">Opłacone</span>
-                    <hr class="my-2">
-                    <div class="pb-3">
-                    <div class="badge badge-warning p-2">45</div><span class="m-2">Oczekujące na płatność</span>
-                    </div>
-                
-                 </div>
+                <?php
+                    require_once './scripts/waitingForService.php';
+                ?>
 
             </div>
             
