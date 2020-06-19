@@ -159,7 +159,7 @@
                         <tbody>
                         <tr> 
                             <td scope="row">1</td>
-                            <td scope="col"><img class="img-fluid" style="width:40px; height:40px;" src="a.jpg"></td>
+                            <td scope="col"><img class="img-fluid" style="width:40px; height:40px;" src="images/a.jpg"></td>
                             <td scope="row">GIT1</td>
                             <td scope="row">Gitara akustyczna</td>
                             <td scope="row">2000</td>

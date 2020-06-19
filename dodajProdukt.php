@@ -12,11 +12,14 @@
         #symbol, #waga{
             width:50px;
         }
-        #nazwa, #producent, #obrazek-url, #kategoria{
+        #nazwa, #producent, #kategoria{
             width:150px; 
         }
         #cena, #stan{
             width:100px; 
+        }
+        #obrazek-url{
+            width:235px;
         }
 
         #znacznik{
@@ -69,21 +72,20 @@
                         </thead>
                         <tbody>
                         <tr> 
-                            
-                            <td scope="row"><input type="text" id="obrazek-url" name="obrazek-url" placeholder="Wpisz ścieżkę"></td>
-                            <td scope="row"><input type="text" id="symbol" name="symbol" placeholder="GIT1"></td>
-                            <td scope="row"><input type="text" id="nazwa" name="nazwa" placeholder="Gitara akustyczna"></td>
-                            <td scope="row"><input type="text" id="cena" name="cena" placeholder="2000.00zł"></td>
-                            <td scope="row"><select class="mr-2" id="stan" name="stan">
-                                                <option value="0">Dostępny</option>
-                                                <option value="1">Niedostępny</option>
-                                                <option value="2">Na wyczerpaniu</option>
-                                            </select></td>
-                            <td scope="row"><input type="text" id="waga" name="waga" placeholder="15kg"></td>
-                            <td scope="row"><input type="text" id="kategoria" name="kategoria" placeholder=""></td>
-                            <td scope="row"><input type="text" id="producent" name="producent" placeholder="Fender"></td>
-                            <td scope="row"><input type="checkbox" id="znacznik" checked></td>
-                        
+                            <form action="scripts/newProduct.php" method="post">
+                                <td scope="row"><input type="file" id="obrazek-url" name="obrazek-url" accept="image/*"></td>
+                                <td scope="row"><input type="text" id="symbol" name="symbol" placeholder="GIT1"></td>
+                                <td scope="row"><input type="text" id="nazwa" name="nazwa" placeholder="Gitara akustyczna"></td>
+                                <td scope="row"><input type="text" id="cena" name="cena" placeholder="2000.00zł"></td>
+                                <td scope="row"><select class="mr-2" id="stan" name="stan">
+                                                    <option value="0">Dostępny</option>
+                                                    <option value="1">Niedostępny</option>
+                                                    <option value="2">Na wyczerpaniu</option>
+                                                </select></td>
+                                <td scope="row"><input type="text" id="waga" name="waga" placeholder="15kg"></td>
+                                <td scope="row"><input type="text" id="kategoria" name="kategoria" placeholder=""></td>
+                                <td scope="row"><input type="text" id="producent" name="producent" placeholder="Fender"></td>
+                                <td scope="row"><input type="checkbox" id="znacznik" checked></td>
                         </tr>
                         </tbody>
                         <table>
@@ -95,9 +97,10 @@
         <div class="col-12">
             <div class="d-flex justify-content-end mt-4">
                 <button class="btn btn-outline-secondary mr-2">Kolejny produkt</button>
-                <button class="btn btn-success">Dodaj produkty</button>
+                <button type="submit" class="btn btn-success">Dodaj produkty</button>
             </div>
         </div>
+                            </form>
 
     </div>
 

@@ -5,7 +5,7 @@ $sql = "SELECT obrazek_url, nazwa, stan, cena, producent FROM produkty LIMIT 3";
 
 $result = mysqli_query($conn, $sql);
 
-$url="./a.jpg"; 
+$url="./images/a.jpg"; 
 while ($row = mysqli_fetch_assoc($result)) {
   echo<<<IMG
   <div class="card d-flex justify-content-center" style="width:220px;">
