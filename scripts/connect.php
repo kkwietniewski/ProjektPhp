@@ -1,4 +1,4 @@
 <?php
     $conn= new mysqli('localhost', 'root', '', 'projektphp');
-    // echo 'ok';
+    $conn->query("SET NAMES 'utf8'"); 
 ?>

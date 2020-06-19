@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+    <style>
+        .card-img-top{
+            height:150px;
+            width:150px; 
+        }
+    </style>
     <title>Aplikacja do zarządzania sklepem internetowym</title>
 </head>
 <body>
@@ -58,16 +64,19 @@
         <div class="row">
             <div class="col-8">
 
-                <?php
-                    require_once './scripts/popularImg.php';
-                ?>
+                <h5 class="display-5 my-4">Najpopularniejsze produkty</h5>
+                <div class=" bg-light d-flex justify-content-around">
+                    <?php
+                        require_once './scripts/popularImg.php';
+                    ?>
 
-            </div>
+                </div>  
+           </div>
       
 
         <div class="col-4">
-            <div class="my-5">
-                <h5 class="display-5 mb-3">Kończące się produkty</h5>
+            <div class="my-3">
+                <h5 class="display-5 mb-4">Kończące się produkty</h5>
                 
                 <?php
                     require_once './scripts/getProductTable.php';
