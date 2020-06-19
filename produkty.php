@@ -47,8 +47,8 @@
 <body>
 
 <nav class="navbar-expand-xl navbar-dark bg-dark p-2" >
-                    <div class="collapse navbar-collapse " >
-                    <div class="menu">
+                    <div class="collapse navbar-collapse" >
+                    <div class="menu ">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="./panelStartowy.php">Panel startowy</a>
@@ -62,9 +62,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./zamowienia.php">Zamówienia</a>
                         </li>
+                    </ul>
                         </div>
                         </div> 
-                    </ul>
 </nav>
 
 <div class="container">
@@ -74,7 +74,7 @@
             <div class="d-flex my-4" style="justify-content:space-between; align-items:center">
 
                 <div class="newProd">
-                    <a class="btn btn-success p-2" style="color:#ffffff;">+ Dodaj produkt
+                    <a class="btn btn-success p-2" href="./dodajProdukt.php"style="color:#ffffff;">+ Dodaj produkt
                     </a>
                 </div>
 
@@ -94,7 +94,7 @@
             <div class="topnav">
                 <a href="javascript:void(0);" onclick="myFunction()">Filtry</a>
         
-                <div class="m-2" id="filter">
+                <div class="m-2 p-2" id="filter">
                     <!-- na sztywno SORTOWANIE-->
                     <select class="mr-2">
                         <option value="0">Data rosnąco</option>
@@ -117,11 +117,11 @@
                 </select>
 
                 <!-- Checkboxy z kategoriami -->
-                <input type="checkbox" id="bestseller" value="bestseller">
+                <input type="radio" id="bestseller" value="bestseller">
                 <label for="bestseller" class="mr-2">Bestseller</label>
-                <input type="checkbox" id="nowosc" value="Nowość">
+                <input type="radio" id="nowosc" value="Nowość">
                 <label for="nowosc" class="mr-2">Nowość</label>
-                <input type="checkbox" id="promocja" value="promocja">
+                <input type="radio" id="promocja" value="promocja">
                 <label for="promocja" class="mr-2">Promocja</label>
 
 
