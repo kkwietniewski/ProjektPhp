@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,7 +53,18 @@
                         </div>
                         </div> 
 </nav>
-
+<?php
+    if(isset($_SESSION['error'])){
+    echo <<<ERROR
+    <div class="card card-outline card-warning"> 
+    <div class="card-header">
+                <h3 class="card-title">$_SESSION[error]</h3>
+                </div>
+                </div>
+ERROR;
+                unset($_SESSION['error']) ;
+    }
+?>
 <div class="container-fluid">
 
     <div class="row">
@@ -72,15 +86,15 @@
                         </thead>
                         <tbody>
                         <tr> 
-                            <form action="scripts/newProduct.php" method="post">
+<form action="scripts/newProduct.php" method="post">
                                 <td scope="row"><input type="file" id="obrazek-url" name="obrazek-url" accept="image/*"></td>
                                 <td scope="row"><input type="text" id="symbol" name="symbol" placeholder="GIT1"></td>
                                 <td scope="row"><input type="text" id="nazwa" name="nazwa" placeholder="Gitara akustyczna"></td>
                                 <td scope="row"><input type="text" id="cena" name="cena" placeholder="2000.00zł"></td>
                                 <td scope="row"><select class="mr-2" id="stan" name="stan">
-                                                    <option value="0">Dostępny</option>
-                                                    <option value="1">Niedostępny</option>
-                                                    <option value="2">Na wyczerpaniu</option>
+                                                    <option value="Dostępny">Dostępny</option>
+                                                    <option value="Niedostępny">Niedostępny</option>
+                                                    <option value="Na wyczerpaniu">Na wyczerpaniu</option>
                                                 </select></td>
                                 <td scope="row"><input type="text" id="waga" name="waga" placeholder="15kg"></td>
                                 <td scope="row"><input type="text" id="kategoria" name="kategoria" placeholder=""></td>
@@ -100,7 +114,7 @@
                 <button type="submit" class="btn btn-success">Dodaj produkty</button>
             </div>
         </div>
-                            </form>
+</form>
 
     </div>
 
