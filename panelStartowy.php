@@ -22,7 +22,7 @@
                             <a class="nav-link active">Panel startowy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./produkty.php">Asortyment</a>
+                            <a class="nav-link" href="./asortyment.php">Asortyment</a>
                         </li> 
                         <li class="nav-item">
                             <a class="nav-link" href="./dodajProdukt.php">Dodaj produkty</a>

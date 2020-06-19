@@ -168,8 +168,8 @@
                             <td scope="row">Gitary akustyczne</td>
                             <td scope="row">Fender</td>
                             <td scope="row" class="btn-group">
-                                <a class="btn btn-outline-info btn-sm" href="./produkt.php">Edytuj</a>
-                                <a class="btn btn-outline-danger btn-sm" href="./produkt.php">Usuń</a>
+                                <a class="btn btn-outline-info btn-sm" href="./edycjaProduktu.php">Edytuj</a>
+                                <a class="btn btn-outline-danger btn-sm" href="#">Usuń</a>
                             </td>
 
                         </tr>
