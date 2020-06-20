@@ -50,7 +50,10 @@
     height:1px;
     display: none;
 }
-
+button{
+    width:70px; 
+    font-size:10px; 
+}
     </style>
 </head>
 <body>
@@ -102,8 +105,9 @@
         
             <div class="topnav">
                 <a href="javascript:void(0);" onclick="myFunction()">Filtry</a>
-        
-                <div class="m-2 p-2" id="filter">
+
+            <form>
+                <div class="m-2 p-2 align-items-baseline" id="filter">
                     <!-- na sztywno SORTOWANIE-->
                     <select class="mr-2">
                         <option value="0">Data rosnąco</option>
@@ -133,9 +137,12 @@
                 <input type="radio" id="promocja" value="promocja">
                 <label for="promocja" class="mr-2">Promocja</label>
 
+                <button class="btn btn-sm btn-outline-secondary ml-4" type="submit">Filtruj</button>
+
 
 
                 </div>
+            </form>
             </div>
   
         </div>
