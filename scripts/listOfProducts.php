@@ -25,8 +25,7 @@ TAB;
         
             <tr> 
                 <td scope="row">$row[id]</td>
-                <div class="card d-flex justify-content-center" style="width:50px;">
-                <img class="card-img-top mx-auto mt-3 mb-0" src="$row[obrazek_url]">
+                <td scope="row"><img class="img-fluid" style="width:40px; height:40px;" src="images/a.jpg"></td>
                 <td scope="row">$row[symbol] </td>
                 <td scope="row">$row[nazwa]</td>
                 <td scope="row">$row[cena]</td>
@@ -34,6 +33,10 @@ TAB;
                 <td scope="row">$row[waga]</td>
                 <td scope="row">$row[kategoria]</td>
                 <td scope="row">$row[producent]</td>
+                <td scope="row" class="btn-group">
+                     <a class="btn btn-outline-info btn-sm" href="./edycjaProduktu.php">Edytuj</a>
+                    <btn class="btn btn-outline-danger btn-sm" >Usuń</a>
+                 </td>
             </tr>
 
 TAB;

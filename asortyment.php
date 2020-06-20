@@ -137,44 +137,13 @@
     <div class="row">
         <div class="col-12">
             <h4>Produkty</h4>
+           
     </div>
     </div>
-    <div class="row">
-        <div class="col-12">
-        <table class="table table-striped table-light ">
-                    <thead>
-                        <tr>
-                            <th scope="col">Id</th>
-                           <th scope="col">Miniatura</th>
-                           <th scope="col">Symbol</th>
-                           <th scope="col">Nazwa</th>
-                            <th scope="col">Cena</th>
-                            <th scope="col">Stan</th>
-                            <th scope="col">Waga</th>
-                            <th scope="col">Kategoria</th>
-                            <th scope="col">Producent</th>
-                            <th scope="col"></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr> 
-                            <td scope="row">1</td>
-                            <td scope="col"><img class="img-fluid" style="width:40px; height:40px;" src="images/a.jpg"></td>
-                            <td scope="row">GIT1</td>
-                            <td scope="row">Gitara akustyczna</td>
-                            <td scope="row">2000</td>
-                            <td scope="row">5</td>
-                            <td scope="row">15kg</td>
-                            <td scope="row">Gitary akustyczne</td>
-                            <td scope="row">Fender</td>
-                            <td scope="row" class="btn-group">
-                                <a class="btn btn-outline-info btn-sm" href="./edycjaProduktu.php">Edytuj</a>
-                                <btn class="btn btn-outline-danger btn-sm" >Usuń</a>
-                            </td>
-
-                        </tr>
-                        </tbody>
-                        <table>
+        <div>
+                 <?php
+                    require_once './scripts/listOfProducts.php';
+                ?>
         </div>
     </div>
                 
