@@ -38,7 +38,7 @@
                         <h5 class="display-4">$nazwa</h5>
                     </div>
                 </div>
-    <form action="#" method="post">
+    <form action="./scripts/editProduct.php" method="post">
         
         <div class="row mt-4">
             <div class="col">
@@ -47,7 +47,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text">Miniatura</span>
                     </div>
-                    <input type="file" class="form-control " name="obrazek-url" id="obrazek-url">
+                    <input type="file" class="form-control " name="obrazekUrl" id="obrazek-url">
                 </div>
             </div>
         </div>
