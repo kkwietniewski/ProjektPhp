@@ -15,10 +15,10 @@ session_start();
         #symbol, #waga{
             width:50px;
         }
-        #nazwa, #producent, #kategoria{
+        #nazwa, #kategoria{
             width:150px; 
         }
-        #cena, #stan{
+        #cena, #stan, #producent{
             width:100px; 
         }
         #obrazek-url{
@@ -33,7 +33,7 @@ session_start();
 </head>
 <body>
 
-<nav class="navbar-expand-xl navbar-dark bg-dark p-2" >
+<nav class="navbar-expand-xl navbar-dark bg-dark p-2 mb-3" >
                     <div class="collapse navbar-collapse " >
                     <div class="menu">
                     <ul class="navbar-nav">
@@ -56,11 +56,9 @@ session_start();
 <?php
     if(isset($_SESSION['error'])){
     echo <<<ERROR
-    <div class="card card-outline card-warning"> 
-    <div class="card-header">
-                <h3 class="card-title">$_SESSION[error]</h3>
-                </div>
-                </div>
+    <div class="container-fluid">
+        <div class="alert alert-danger">$_SESSION[error]</div>
+    </div>
 ERROR;
                 unset($_SESSION['error']) ;
     }
@@ -70,7 +68,7 @@ ERROR;
     <div class="row">
         <div class="col-12">
 
-        <table class="table table-striped table-light mt-4 ">
+        <table class="table table-striped table-light mt-2 ">
                     <thead>
                         <tr>
                            <th scope="col">Miniatura</th>
