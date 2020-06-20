@@ -1,5 +1,8 @@
 <?php
     require_once './scripts/connect.php';
+
+    $sql = "SELECT id,symbol,nazwa,cena,obrazek_url,stan,waga,kategoria,producent,znacznik AS wartosc FROM produkty ORDER BY id;
+
     $result = mysqli_query($conn, $sql);
 
     echo <<<TAB
@@ -7,6 +10,7 @@
     <thead>
             <tr>
                 <th scope="col">id</th>
+                <th scope="col">Miniatura</th>
                 <th scope="col">symbol</th>
                 <th scope="col">nazwa</th>
                 <th scope="col">cena</th>
