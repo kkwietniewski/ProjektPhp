@@ -169,7 +169,7 @@
                             <td scope="row">Fender</td>
                             <td scope="row" class="btn-group">
                                 <a class="btn btn-outline-info btn-sm" href="./edycjaProduktu.php">Edytuj</a>
-                                <a class="btn btn-outline-danger btn-sm" href="#">Usuń</a>
+                                <btn class="btn btn-outline-danger btn-sm" >Usuń</a>
                             </td>
 
                         </tr>
