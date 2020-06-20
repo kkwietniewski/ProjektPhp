@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $_SESSION['product_id']=0;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,6 +44,11 @@
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+}
+.rowid{
+    width:1px;
+    height:1px;
+    display: none;
 }
 
     </style>

@@ -3,6 +3,7 @@
 
         $sql = "SELECT id,symbol,nazwa,cena,obrazek_url,stan,waga,kategoria,producent,znacznik AS wartosc FROM produkty ORDER BY id";
         $result = mysqli_query($conn, $sql);
+        $tmp=0;
     echo <<<TAB
     <table class="table table-striped table-light ">
         <thead>
@@ -34,10 +35,14 @@ TAB;
                 <td scope="row">$row[kategoria]</td>
                 <td scope="row">$row[producent]</td>
                 <td scope="row" class="btn-group">
-                     <a class="btn btn-outline-info btn-sm" href="./edycjaProduktu.php">Edytuj</a>
-                    <btn class="btn btn-outline-danger btn-sm" >Usuń</a>
-                 </td>
-            </tr>
+                <form action="./edycjaProduktu.php" method="post">
+                <button type="submit" class="btn btn-outline-info btn-sm" >Edytuj
+                </button>
+                <btn class="btn btn-outline-danger btn-sm" >Usuń</a>
+                </td>
+                </tr>
+                <input class="rowid" name="productId" value="$row[id]">
+                </form>
 
 TAB;
     }
