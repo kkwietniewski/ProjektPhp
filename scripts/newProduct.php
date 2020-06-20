@@ -37,7 +37,7 @@
             $stmt->bind_param("ssssssss", $symbol, $nazwa, $cena, $obrazekUrl, $stan, $waga, $row[0], $producent) ;
 
             if ($stmt->execute()){
-                echo 'ok';
+                // echo 'ok';
                 $conn->close();
                 $stmt->close();
                 header('location: ../asortyment.php');
@@ -63,7 +63,7 @@
                         $stmt->bind_param("ssssssss", $symbol, $nazwa, $cena, $obrazekUrl, $stan, $waga, $row[0], $producent) ;
                 
                         if ($stmt->execute()){
-                            echo 'ok';
+                            // echo 'ok';
                             $conn->close();
                             $stmt->close();
                             header('location: ../asortyment.php');
