@@ -39,7 +39,7 @@
   
 
 
-<div class="container-fluid mt-5 mb-5">
+<div class="container-fluid mt-5 mb-5 ">
         <div class="row">
 
             <div class="col-8">
@@ -65,7 +65,7 @@
             <div class="col-8">
 
                 <h5 class="display-5 my-4">Najpopularniejsze produkty</h5>
-                <div class=" bg-light d-flex justify-content-around">
+                <div class=" d-flex justify-content-between">
                     <?php
                         require_once './scripts/popularProduct.php';
                     ?>
