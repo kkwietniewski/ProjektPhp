@@ -118,9 +118,15 @@ button{
                     </select>
                     <!-- kategorie z bazy danych -->
                 <select class="mr-2" name="sortKat">
+<<<<<<< HEAD
                        <?php
                             require_once './scripts/sortKategory.php'
                        ?>
+=======
+                <?php
+                    require_once './scripts/sortKategory.php';
+                ?>
+>>>>>>> 1dcee3c89e5f5d5195d4ee3d6893d921327ba937
                 </select>
                 <!-- na sztywno STAN -->
                 <select class="mr-2">

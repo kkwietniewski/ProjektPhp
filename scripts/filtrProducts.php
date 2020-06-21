@@ -1,7 +1,8 @@
 <?php
     session_start();
-    // echo $_POST['sort'];
     $sortType = $_POST['sort'];
+    $sortKategory=$_POST['sortKat'];
+
 
     switch ($sortType) {
         case 'Cena rosnąco':
@@ -16,8 +17,8 @@
         case 'Nazwa z-a':
             $_SESSION['sortType']="nazwa DESC";
             break;
-        
-        
+            
     }
+
     header('location: ../asortyment.php');
 ?>
