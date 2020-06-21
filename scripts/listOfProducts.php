@@ -1,8 +1,8 @@
 <?php
-    require_once './scripts/connect.php';
+    
     if(isset($_SESSION['sortType'])){
         $sortType = $_SESSION['sortType'];
-        unset($_SESSION['sortType']);
+        unset($_SESSION['sortType']);    
     }
     else{
         $sortType = "id";
