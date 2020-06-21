@@ -43,12 +43,22 @@
 
     switch ($sortAvailability) {
         case '0':
-            # code...
+            $_SESSION['sortAvailability']=0; 
+            break;
+        case '1':
+            $_SESSION['sortAvailability']="Dostępny"; 
+            break;
+        case '2':
+            $_SESSION['sortAvailability']="Na wyczerpaniu"; 
+            break;
+        case '3':
+            $_SESSION['sortAvailability']="Niedostępny"; 
             break;
         
         default:
-            # code...
+            $_SESSION['sortAvailability']=0; 
             break;
     }
+    
     header('location: ../asortyment.php');
 ?>

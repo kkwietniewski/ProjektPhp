@@ -1,23 +1,25 @@
 <?php
     
-    if(isset($_SESSION['sortType']) && isset($_SESSION['sortKategory'])){
+    if(isset($_SESSION['sortType']) && isset($_SESSION['sortKategory']) && isset($_SESSION['sortAvailability'])){
         $sortType = $_SESSION['sortType'];
         unset($_SESSION['sortType']);    
 
         $sortKategory=$_SESSION['sortKategory']; 
         unset($_SESSION['sortKategory']) ;
 
-        $sql = "SELECT id, obrazek_url, symbol, nazwa, cena, stan, waga, k.kategoria, producent FROM produkty p JOIN kategoria k ON p.kategoria=k.kategoria_id WHERE k.kategoria='$sortKategory'";
+        $sortAvailability=$_SESSION['sortAvailability'];
+        unset($_SESSION['sortAvailability']); 
+
+        $sql = "SELECT id, obrazek_url, symbol, nazwa, cena, stan, waga, k.kategoria, producent FROM produkty p JOIN kategoria k ON p.kategoria=k.kategoria_id WHERE k.kategoria='$sortKategory' AND stan='$sortAvailability' ORDER BY $sortType";
+
     }
-    else{
-        $sortType = "id";
-        $sortKategory="git" ;
-        $sql = "SELECT id, obrazek_url, symbol, nazwa, cena, stan, waga, k.kategoria, producent FROM produkty p JOIN kategoria k ON p.kategoria=k.kategoria_id ";
+    else {
+        $sql = "SELECT id, obrazek_url, symbol, nazwa, cena, stan, waga, k.kategoria, producent FROM produkty p JOIN kategoria k ON p.kategoria=k.kategoria_id";
     }
        
 
         $result = mysqli_query($conn, $sql);
-        $tmp=0;
+
     echo <<<TAB
     <table class="table table-striped table-light ">
         <thead>
