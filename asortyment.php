@@ -110,7 +110,7 @@ button{
                 <div class="m-2 p-2 align-items-baseline" id="filter">
                     <!-- na sztywno SORTOWANIE-->
                     <select class="mr-2" name="sort">
-                    
+                        <option value="0">Domyślnie</option>
                         <option value="Cena rosnąco">Cena rosnąco</option>
                         <option value="Cena malejąco">Cena malejąco</option>
                         <option value="Nazwa a-z">Nazwa a-z</option>
@@ -118,15 +118,17 @@ button{
                     </select>
                     <!-- kategorie z bazy danych -->
                 <select class="mr-2" name="sortKat">
+                    <option value="0">Wszystkie</option>
                        <?php
                             require_once './scripts/sortKategory.php'
                        ?>
                 </select>
                 <!-- na sztywno STAN -->
-                <select class="mr-2">
-                        <option value="0">Dostępny</option>
-                        <option value="1">Na wyczerpaniu</option>
-                        <option value="2">Niedostępny</option>
+                <select class="mr-2" name="sortAvail">
+                        <option value="0">Wszystkie</option>   
+                        <option value="1">Dostępny</option>
+                        <option value="2">Na wyczerpaniu</option>
+                        <option value="3">Niedostępny</option>
                 </select>
 
                 <!-- Checkboxy z kategoriami -->

@@ -1,10 +1,17 @@
 <?php
+    require_once './connect.php';
     session_start();
     $sortType = $_POST['sort'];
     $sortKategory=$_POST['sortKat'];
+    $sortAvailability=$_POST['sortAvail']; 
 
+    $sql="SELECT kategoria_id, kategoria FROM kategoria"; 
+    $result = mysqli_query($conn, $sql);
 
     switch ($sortType) {
+        case '0':
+            $_SESSION['sortType']=0; 
+        break; 
         case 'Cena rosnąco':
             $_SESSION['sortType']="cena";
             break;
@@ -19,6 +26,29 @@
             break;
             
     }
+    if ($sortKategory=='0')
+    {
+        $_SESSION['sortKategory']=0; 
+    }
+    else {
+        while ($row = mysqli_fetch_assoc($result)){
+            
+             if($row['kategoria_id']==$sortKategory){
+                $_SESSION['sortKategory']=$row['kategoria']; 
+                echo $_SESSION['sortKategory'] ;
+             }
+            
+        }
+    }
 
+    switch ($sortAvailability) {
+        case '0':
+            # code...
+            break;
+        
+        default:
+            # code...
+            break;
+    }
     header('location: ../asortyment.php');
 ?>

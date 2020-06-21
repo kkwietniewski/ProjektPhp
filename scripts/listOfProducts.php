@@ -1,13 +1,20 @@
 <?php
     
-    if(isset($_SESSION['sortType'])){
+    if(isset($_SESSION['sortType']) && isset($_SESSION['sortKategory'])){
         $sortType = $_SESSION['sortType'];
         unset($_SESSION['sortType']);    
+
+        $sortKategory=$_SESSION['sortKategory']; 
+        unset($_SESSION['sortKategory']) ;
+
+        $sql = "SELECT id, obrazek_url, symbol, nazwa, cena, stan, waga, k.kategoria, producent FROM produkty p JOIN kategoria k ON p.kategoria=k.kategoria_id WHERE k.kategoria='$sortKategory' ORDER BY $sortType";
     }
     else{
         $sortType = "id";
+        $sortKategory="git" ;
+        $sql = "SELECT id, obrazek_url, symbol, nazwa, cena, stan, waga, k.kategoria, producent FROM produkty p JOIN kategoria k ON p.kategoria=k.kategoria_id ";
     }
-        $sql = "SELECT id,symbol,nazwa,cena,obrazek_url,stan,waga,kategoria,producent,znacznik AS wartosc FROM produkty ORDER BY $sortType";
+       
 
         $result = mysqli_query($conn, $sql);
         $tmp=0;
