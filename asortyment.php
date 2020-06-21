@@ -117,18 +117,12 @@ button{
                         <option value="Nazwa z-a">Nazwa z-a</option>
                     </select>
                     <!-- kategorie z bazy danych -->
-                <select class="mr-2" name="sortKat">
-<<<<<<< HEAD
-                    <option value="0">Wszystkie</option>
-                       <?php
-                            require_once './scripts/sortKategory.php'
-                       ?>
-=======
-                <?php
-                    require_once './scripts/sortKategory.php';
-                ?>
->>>>>>> 4b30422d652f3aae52f7bb9efc385064977b8bfa
-                </select>
+                    <select class="mr-2" name="sortKat">
+                        <option value="0">Wszystkie</option>
+                        <?php
+                            require_once './scripts/sortKategory.php' ;
+                        ?>
+                    </select>
                 <!-- na sztywno STAN -->
                 <select class="mr-2" name="sortAvail">
                         <option value="0">Wszystkie</option>   

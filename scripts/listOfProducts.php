@@ -7,7 +7,7 @@
         $sortKategory=$_SESSION['sortKategory']; 
         unset($_SESSION['sortKategory']) ;
 
-        $sql = "SELECT id, obrazek_url, symbol, nazwa, cena, stan, waga, k.kategoria, producent FROM produkty p JOIN kategoria k ON p.kategoria=k.kategoria_id WHERE k.kategoria='$sortKategory' ORDER BY $sortType";
+        $sql = "SELECT id, obrazek_url, symbol, nazwa, cena, stan, waga, k.kategoria, producent FROM produkty p JOIN kategoria k ON p.kategoria=k.kategoria_id WHERE k.kategoria='$sortKategory'";
     }
     else{
         $sortType = "id";
@@ -35,6 +35,7 @@
         </thead>
         <tbody>
 TAB;
+
     while ($row = mysqli_fetch_assoc($result)) {
     echo <<<TAB
         
