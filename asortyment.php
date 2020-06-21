@@ -117,9 +117,10 @@ button{
                         <option value="Nazwa z-a">Nazwa z-a</option>
                     </select>
                     <!-- kategorie z bazy danych -->
-                <select class="mr-2">
-                        <option value="0">Gitara klasyczna</option>
-                        <option value="1">Gitara elektryczna</option>
+                <select class="mr-2" name="sortKat">
+                       <?php
+                            require_once './scripts/sortKategory.php'
+                       ?>
                 </select>
                 <!-- na sztywno STAN -->
                 <select class="mr-2">
