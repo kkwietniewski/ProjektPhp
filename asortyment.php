@@ -106,16 +106,15 @@ button{
             <div class="topnav">
                 <a href="javascript:void(0);" onclick="myFunction()">Filtry</a>
 
-            <form>
+            <form action="./scripts/filtrProducts.php" method="post">
                 <div class="m-2 p-2 align-items-baseline" id="filter">
                     <!-- na sztywno SORTOWANIE-->
-                    <select class="mr-2">
-                        <option value="0">Data rosnąco</option>
-                        <option value="1">Data malejąco</option>
-                        <option value="2">Cena rosnąco</option>
-                        <option value="3">Cena malejąco</option>
-                        <option value="4">Nazwa a-z</option>
-                        <option value="5">Nazwa z-a</option>
+                    <select class="mr-2" name="sort">
+                    
+                        <option value="Cena rosnąco">Cena rosnąco</option>
+                        <option value="Cena malejąco">Cena malejąco</option>
+                        <option value="Nazwa a-z">Nazwa a-z</option>
+                        <option value="Nazwa z-a">Nazwa z-a</option>
                     </select>
                     <!-- kategorie z bazy danych -->
                 <select class="mr-2">

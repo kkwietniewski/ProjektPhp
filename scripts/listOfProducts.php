@@ -1,7 +1,14 @@
 <?php
     require_once './scripts/connect.php';
+    if(isset($_SESSION['sortType'])){
+        $sortType = $_SESSION['sortType'];
+        unset($_SESSION['sortType']);
+    }
+    else{
+        $sortType = "id";
+    }
+        $sql = "SELECT id,symbol,nazwa,cena,obrazek_url,stan,waga,kategoria,producent,znacznik AS wartosc FROM produkty ORDER BY $sortType";
 
-        $sql = "SELECT id,symbol,nazwa,cena,obrazek_url,stan,waga,kategoria,producent,znacznik AS wartosc FROM produkty ORDER BY id";
         $result = mysqli_query($conn, $sql);
         $tmp=0;
     echo <<<TAB
