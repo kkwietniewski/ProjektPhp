@@ -121,9 +121,6 @@ button{
                        <?php
                             require_once './scripts/sortKategory.php'
                        ?>
-                <?php
-                    require_once './scripts/sortKategory.php';
-                ?>
                 </select>
                 <!-- na sztywno STAN -->
                 <select class="mr-2">
